@@ -5,10 +5,9 @@
 /**                                                                 **/
 /**   Primeiro Exercicio-Programa                                   **/
 /**                                                                 **/
-/**   Francisco Olivera Gomes Junior           12683190             **/
+/**   Francisco Oliveira Gomes Junior           12683190            **/
 /**                                                                 **/
 /*********************************************************************/
-
 
         /*Caixa eletronico das Ilhas Weblands, com estoque ilimitado de cedulas
         de B$50,00, B$20,00, B$5,00 e B$1,00.*/
@@ -16,24 +15,25 @@
 
 #include <stdio.h>
 
-/* Numero de cedulas */
-int n50, n20, n5, n1;
+int n50, n20, n5, n1;      // Numero de cedulas
 
 void fazRetirada(int valor) {
-
     if (valor <= 0) n50 = n20 = n5 = n1 = -1;
     else{
-
-        n50 = valor / 50;   //RETIRAR NOTAS DE R$50,00
+            //RETIRAR NOTAS DE R$50,00
+        n50 = valor / 50;
         valor %= 50;
 
-        n20 = valor / 20;   //RETIRAR NOTAS DE R$20,00
+            //RETIRAR NOTAS DE R$20,00
+        n20 = valor / 20;
         valor %= 20;
 
-        n5 = valor / 5;     //RETIRAR NOTAS DE R$5,00
+            //RETIRAR NOTAS DE R$5,00
+        n5 = valor / 5;
         valor %= 5;
 
-        n1 = valor;     //DEFINIR NOTAS DE R$1,00
+            //DEFINIR NOTAS DE R$1,00
+        n1 = valor;
     }
 }
 

@@ -13,10 +13,10 @@ int n50, n20, n5, n1;
 
 
 void main(){
-    //valor = 150;
+    valor = 150;
 
-    //n50 = definirQuantidade(50);
-    //n20 = definirQuantidade(20);
+    n50 = definirQuantidade(50);
+    n20 = definirQuantidade(20);
 
 
     int valor = 2344;
