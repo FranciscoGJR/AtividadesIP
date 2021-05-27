@@ -48,7 +48,7 @@ int main() {
 	printf("Notas de 1:  %i\n", n1);
 	printf("Confere = %d\n", n50*50 + n20*20 + n5*5 + n1);
 
-	valor = 72;
+	valor = 312;
 	fazRetirada(valor);
 	printf("\nValor: %i\n",valor);
 	printf("Notas de 50: %i\n", n50);
