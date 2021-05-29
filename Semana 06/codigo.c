@@ -22,9 +22,10 @@ void cor(int identificador){
 
 void main(){
 
-    cor(1);
-    cor(2);
-    cor(3);
-    cor(4);
-    cor(6);
+
+
+    for(c = 1; c <= 5; c++){
+        printf("%d", c);
+    }
+
 }
