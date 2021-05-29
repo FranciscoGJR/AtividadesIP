@@ -20,12 +20,23 @@ void cor(int identificador){
     }
 }
 
+
+void conjecturaDeCollatz(int n){
+   printf("Imprimindo sequencia iniciando em %i\n", n);
+   while (n>1){
+      if (n % 2 == 0) n = n/2;
+      else n = 3*n + 1;
+      printf("%i\n",n);
+   }
+}
+
 void main(){
 
+    // CHAMAR FUNÇÃO COR
+    int c;
+    for(c = 1; c < 6; c++) cor(c);
 
 
-    for(c = 1; c <= 5; c++){
-        printf("%d", c);
-    }
+    conjecturaDeCollatz(91);
 
 }
