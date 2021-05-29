@@ -16,25 +16,19 @@ void cor(int identificador){
             printf("Branco.\n");
             break;
         default:
-            printf("Identificador invalido.\n");
+            printf("Identificador invalido.");
     }
 }
 
 
 void conjecturaDeCollatz(int n){
-    int contador;
-
     printf("Imprimindo sequencia iniciando em %i\n", n);
+   
     while (n>1){
         if (n % 2 == 0) n = n/2;
         else n = 3*n + 1;
-
-        contador += 1;
-        if (contador % 7 == 0) printf("\n");
-
-        printf("%5i ",n);
+      printf("%i\n",n);
    }
-    printf("\nForam realizadas um total de %d interacoes.", contador);
 }
 
 void main(){
