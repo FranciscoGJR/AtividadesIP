@@ -2,14 +2,22 @@
 
 void cor(int identificador){
 
-    if (identificador == 1) printf("Verde\n");
-    else if(identificador == 2) printf("Amarelo\n");
-    else if(identificador == 3) printf("Azul\n");
-    else if(identificador == 4) printf("Branco\n");
-    else printf("Identificador invalido\n");
-
-
-
+    switch (identificador){
+        case 1:
+            printf("Verde.\n");
+            break;
+        case 2:
+            printf("Amarelo.\n");
+            break;
+        case 3:
+            printf("Azul.\n");
+            break;
+        case 4:
+            printf("Branco.\n");
+            break;
+        default:
+            printf("Identificador invalido.");
+    }
 }
 
 void main(){
