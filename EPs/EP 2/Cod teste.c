@@ -51,5 +51,9 @@ int main() {
 	printf("(9846) (0.245) = %f\n", raizQuadrada(9846, 0.245));
 
 	printf("(91) (0.04) = %f\n", raizQuadrada(91, 0.04));
+
+	printf("(91) (0) = %f\n", raizQuadrada(91, 0));
+
+	printf("(91) (1) = %f\n", raizQuadrada(91, 1));
 	return 0;
 }
