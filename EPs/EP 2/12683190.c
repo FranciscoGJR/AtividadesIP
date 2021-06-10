@@ -18,6 +18,7 @@ double modulo(double number){
     return number;
 }
 
+    //RAIZ QUADRADA COM METODO DE NEWTON
 double raizQuadrada(double a, double epsilon) {
         // RETORNAR ERRO
     if(a < 0 || epsilon <= 0 || epsilon >= 1) return -1;
@@ -59,8 +60,3 @@ int main() {
 	printf("(42) (-87) = %f\n", raizQuadrada(42, -87));
 	return 0;
 }
-
-
-
-
-
