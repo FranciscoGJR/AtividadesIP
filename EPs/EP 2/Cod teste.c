@@ -43,5 +43,13 @@ int main() {
 	printf("(42) (6) = %f\n", raizQuadrada(42, 6));
 
 	printf("(42) (-87) = %f\n", raizQuadrada(42, -87));
+
+	printf("(167) (0.593) = %f\n", raizQuadrada(167, 0.593));
+
+	printf("(6241) (0.00352) = %f\n", raizQuadrada(6241, 0.00352));
+
+	printf("(9846) (0.245) = %f\n", raizQuadrada(9846, 0.245));
+
+	printf("(91) (0.04) = %f\n", raizQuadrada(91, 0.04));
 	return 0;
 }
