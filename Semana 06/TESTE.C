@@ -1,8 +1,9 @@
-int contagem1(int* valores, int n, int x){
-    int c, contador;
+double* somaPolinomios(double* p, double* q, int n) {
+    int i;
+    double* soma = (double*) malloc(sizeof(double)*n);
 
-    for(c = 0; c < n; c++)
-        if(valores[c] == x) contador++;
+    for(i = 0; i < n; i++)
+        soma[i] = p[i] + q[i];
 
-    return contador;
+    return soma;
 }
