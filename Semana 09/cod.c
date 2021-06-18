@@ -1,29 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int contagem1(int* valores, int n, int x){
-    int c, contador;
+double* somaPolinomios(double* p, double* q, int n) {
+    int i;
+    double* soma = (double*) malloc(sizeof(double)*n);
 
-    for(c = 0; c < n; c++)
-        if(valores[c] == x) contador++;
+    for(i = 0; i < n; i++)
+        soma[i] = p[i] + q[i];
 
-    return contador;
+    return soma;
 }
 
-int main() {
-  int* x = (int*) malloc(sizeof(int)*10);
-  x[0] = 3;
-  x[1] = 4;
-  x[2] = 5;
-  x[3] = -1;
-  x[4] = 7;
-  x[5] = 3;
-  x[6] = 4;
-  x[7] = 3;
-  x[8] = -1;
-  x[9] = 6;
+int main(){
+  int i, j;
+  double* p1, * p2, * r;
+  int n = 5;
+  p1 = (double*) malloc(sizeof(double)*n);
+  p2 = (double*) malloc(sizeof(double)*n);
+  p1[0] = 1;
+  p1[1] = 0;
+  p1[2] = 2;
+  p1[3] = 0;
+  p1[4] = 4;
 
-  printf("Resultado: %i\n", contagem1(x, 10, 3));
+  p2[0] = 3;
+  p2[1] = 2;
+  p2[2] = 3;
+  p2[3] = -2;
+  p2[4] = 3;
+
+  r = somaPolinomios(p1,p2,n);
+  for (i=0;i<n;i++){
+    if (r[i]>=0) printf(" +");
+    else printf(" ");
+    printf("%.2f*x^%i", r[i], i);
+  }
+  printf("\n");
 
   return 0;
 }
+
+
+/* SAIDA:
+ +4.00*x^0 +2.00*x^1 +5.00*x^2 -2.00*x^3 +7.00*x^4
+*/
