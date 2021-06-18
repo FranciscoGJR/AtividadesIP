@@ -1,16 +1,8 @@
-#include <stdio.h>
+int contagem1(int* valores, int n, int x){
+    int c, contador;
 
-void retangulo(int largura, int altura){
-    int c, i;
+    for(c = 0; c < n; c++)
+        if(valores[c] == x) contador++;
 
-    for(i = 0; i < altura; i++){
-        for(c = 0; c < largura; c++)
-            printf("#");
-        printf("\n");
-    }
-}
-
-void main(){
-    printf("LARGURA = 4\nALTURA = 3: \n");
-    retangulo(4, 3);
+    return contador;
 }
